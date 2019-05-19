@@ -1,0 +1,25 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "find the best friend for you",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srobfillingim/friend-finder.git"
+  },
+  "author": "Samuel Fillingim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srobfillingim/friend-finder/issues"
+  },
+  "homepage": "https://github.com/srobfillingim/friend-finder#readme"
+}
