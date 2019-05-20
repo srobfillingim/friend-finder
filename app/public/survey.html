@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+	<title>Friend Finder Pro</title>
+	<!-- Link to the jQuery Library -->
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<!-- Including Font Awesome Icons -->
+  	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+	<!-- Link to reset stylesheet -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Compiled and minified Materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+	<!-- Compiled and minified Materialize JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body alt="Chain of paper friends in circle">
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Friend Finder Survey</h1>
+			<hr>
+			<h4>Answer a few basic questions.</h4>
+			<h4>Then find the friend with the greatest compatibility!</h4>
+			<hr>
+
+			<form>
+				<div class="form-group">
+					<label for="userName">Your Name (Required)</label>
+					<input type="text" class="form-control" id="friendName" placeholder="Enter Your Name">
+				</div>
+
+				
+
+				<div class="input-group mb-3">
+					<div class="custom-file">
+						<input type="file" class="custom-file-input" id="inputGroupFile02 ">
+						<label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+					</div>
+
+					<div class="input-group-append">
+						<span class="input-group-text" id="friendImg">Upload</span>
+					</div>
+				</div>
+
+				<hr>
+
+				<h5>Instructions: Read question then answer it by choosing a number between 1 (Strongly Disagree) and 5 (Strongly Agree) from the dropdown.</h5>
+				<br>
+				<div class="form-group">
+					<label for="question1">Question 1: How do you like your drinks served?</label>
+					<select class="form-control" id="question1">
+						<option value>Select an option</option>
+						<option value=1>1 In a cold bottle</option>
+						<option value=2>2 Through a squirt gun</option>
+						<option value=3>3 Soaked in meat or pineapple</option>
+						<option value=4>4 Whatever's left over on the bar</option>
+						<option value=5>5 Milk and only milk</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="question2">Question 2: What is your dream job?</label>
+					<select class="form-control" id="question2">
+						<option value>Select an option</option>
+						<option value=1>1 Comedian/actor</option>
+						<option value=2>2 Fashion Model</option>
+						<option value=3>3 Secret service Agent</option>
+						<option value=4>4 Janitor</option>
+						<option value=5>5 CEO but I don't do anything</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="question3">Question 3: At your 10-year high school reunion you...</label>
+					<select class="form-control" id="question3">
+						<option value>Select an option</option>
+						<option value=1>1 Didn't even get invited</option>
+						<option value=2>2 Pull a prank to get back at your bullies</option>
+						<option value=3>3 perform an impressive dance</option>
+						<option value=4>4 Get drunk and find a date there</option>
+						<option value=5>5 Steal everyone's valuables</option>
+					</select>
+                </div>
+                
+				<div class="form-group">
+					<label for="question4">Question 4: How does the government screw us over the most?</label>
+					<select class="form-control" id="question4">
+						<option value>Select an option</option>
+						<option value=1>1 The recycling problem</option>
+						<option value=2>2 High gas prices</option>
+						<option value=3>3 High gas prices</option>
+						<option value=4>4 Taxes</option>
+						<option value=5>5 Dirty Politics</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="question5">Question 5: Who was the one that got away?</label>
+					<select class="form-control" id="question5">
+						<option value>Select an option</option>
+						<option value=1>1 My high school sweetheart</option>
+						<option value=2>2 My barista at the coffee shop</option>
+						<option value=3>3 My ex-spouse</option>
+						<option value=4>4 My friend's mother</option>
+						<option value=5>5 They never get away</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="question6">Question 6: What's your special talent?</label>
+					<select class="form-control" id="question6">
+						<option value>Select an option</option>
+						<option value=1>1 Physical fitness</option>
+						<option value=2>2 Acting and singing</option>
+						<option value=3>3 Investing money</option>
+						<option value=4>4 Flirting with the opposite sex</option>
+						<option value=5>5 Rats</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="question7">Question 7: Do you like to go out with a couple of friends to socialize?</label>
+					<select class="form-control" id="question7">
+						<option value>Select an option</option>
+						<option value=1>1 (Strongly Disagree)</option>
+						<option value=2>2</option>
+						<option value=3>3</option>
+						<option value=4>4</option>
+						<option value=5>5 (Strongly Agree)</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="question8">Question 8: What interests you the most?</label>
+					<select class="form-control" id="question8">
+						<option value>Select an option</option>
+						<option value=1>1 Stand-up comedy</option>
+						<option value=2>2 Hand-to-hand combat</option>
+						<option value=3>3 Money and women</option>
+						<option value=4>4 Ghouls</option>
+						<option value=5>5 The art of seduction</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="question9">Question 9: How do you pick someone up at the bar?</label>
+					<select class="form-control" id="question9">
+						<option value>Select an option</option>
+						<option value=1>1 Insult them</option>
+						<option value=2>2 Pretend I murdered a few doctors</option>
+						<option value=3>3 Do the move</option>
+						<option value=4>4 I would follow them everywhere</option>
+						<option value=5>5 DENNIS System</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="question10">Question 10: In your group of friends you are the...</label>
+					<select class="form-control" id="question10">
+						<option value>Select an option</option>
+						<option value=1>1 Useless</option>
+						<option value=2>2 Muscle</option>
+						<option value=3>3 Looks</option>
+						<option value=4>4 Brains</option>
+						<option value=5>5 Wild card</option>
+					</select>
+				</div>
+
+				<br>
+
+				<button type="submit" class="btn btn-primary submit"><i class="far fa-check-square"></i> Submit Survey</button>
+			</form>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+       		<p><a href="/api/friends">API Friends Link</a> | <a href="https://github.com/2crazyflowers/FriendFinder">GitHub Repo</a></p>
+     	</div>
+	</footer>
+
+
+	<div class="modal" id="executeModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Friend Match</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<h4>Your new friend's name is: <span id="bestName"></span></h4>
+					<img id="bestImg">
+					<!-- <p>Modal body text goes here.</p> -->
+				</div>
+				<div class="modal-footer">
+					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+
+	$(".submit").on("click", function(event) {
+		//prevent it from erasing data before it is captured
+		event.preventDefault();
+		alert("Thank you for submitting to the FriendFinder Survey");
+		// Here we grab the form elements
+		//the question values are returning undefined
+		var newFriend = {
+
+	        newName: $("#friendName").val().trim(),
+
+	        newImg: $("#friendImg").val().trim(),
+
+	       	scores: [
+	       		$("#question1").val(),
+	        	$("#question2").val(),
+	       		$("#question3").val(),
+	        	$("#question4").val(),
+	        	$("#question5").val(),
+	        	$("#question6").val(),
+	        	$("#question7").val(),
+	       		$("#question8").val(),
+	        	$("#question9").val(),
+	        	$("#question10").val()
+	        ]
+
+    };
+
+    //log newFriend captured from form
+    //console.log(newFriend);
+    //console.log(newFriend.newName);
+    //this is what I need to do the friend match up
+    //console.log(newFriend.scores);
+    //console.log(newFriend[0].score);
+
+    $.post("/api/friends", newFriend,
+        function(data) {
+	        // If a best friend match is found
+	        if (data) {
+	            //alert("Yay! You are part of the FriendFinder Network, please wait for your best friend match!");
+	            $('#bestName').text(data.name);
+          		$('#bestImg').attr("src", data.img).addClass("img-fluid");
+	            //show modal with best friend match
+	    		$('#executeModal').modal('toggle');        
+	  	   		//   $('#myModal').on('shown.bs.modal', function () {
+					// 	$('#myInput').trigger('focus')
+				// })
+          	}
+
+          	else {
+            	alert("Sorry we are having problems, please try again");
+          	}
+			// Clear the form when submitting
+			$("#friendName").val("");
+			$("#friendImg").val("");
+			$("#question1").val("");
+			$("#question2").val("");
+			$("#question3").val("");
+			$("#question4").val("");
+			$("#question5").val("");
+			$("#question6").val("");
+			$("#question7").val("");
+			$("#question8").val("");
+			$("#question9").val("");
+			$("#question10").val("");
+        });
+
+	});	
+
+</script>

@@ -17,7 +17,7 @@ app.use(bodyParser.text());
 
 // Application routes
 require(path.join(__dirname, './app/routing/apiRoutes'))(app);
-require(path.join(__dirname, '.app/routing/htmlRoutes'))(app);
+require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 // Listening on PORT
 app.listen(PORT, function(){
